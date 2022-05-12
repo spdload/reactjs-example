@@ -1,0 +1,8 @@
+@import './mixins.scss';
+
+@include font-face('HelveticaNeueThin', 'HelveticaNeue', 100);
+@include font-face('HelveticaNeueUltraLight', 'HelveticaNeue', 200);
+@include font-face('HelveticaNeueLight', 'HelveticaNeue', 300);
+@include font-face('HelveticaNeue', 'HelveticaNeue', 400);
+@include font-face('HelveticaNeueMedium', 'HelveticaNeue', 500);
+@include font-face('HelveticaNeueBold', 'HelveticaNeue', 700);

@@ -1,0 +1,124 @@
+@import '../../node_modules/scss-reset/src/scss/_reset.scss';
+@import './fonts.scss';
+
+html {
+  font: 16px/18px 'Helvetica Neue', sans-serif;
+  font-weight: normal;
+}
+
+// Notifications
+
+.ant-notification-notice {
+  &-closable .ant-notification-notice-message {
+    font-size: 1rem;
+    color: #243b53;
+    font-weight: 500;
+  }
+
+  &-description {
+    color: #243b53;
+    font-size: 0.875rem;
+    font-weight: 400;
+  }
+
+  &-close {
+    svg {
+      width: 8px;
+    }
+  }
+
+  &.success {
+    .ant-notification-notice-description {
+      margin-left: 0;
+    }
+
+    .ant-notification-notice-message {
+      color: #047857;
+    }
+  }
+}
+
+// Tooltip
+.ant-tooltip-inner {
+  color: #334e68;
+  border: 1px solid #bcccdc;
+  padding: 10px 7px;
+  font-size: 14px;
+  box-shadow: none;
+}
+
+.ant-tooltip-arrow {
+  overflow: visible;
+  width: 24px;
+  height: 8px;
+  bottom: 1px;
+}
+
+.ant-tooltip-arrow-content {
+  transform: none !important;
+  width: 24px;
+  height: 8px;
+
+  &:after {
+    display: block;
+    content: '';
+    width: 24px;
+    height: 8px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: url('../assets/images/icons/tooltip-top.svg') center no-repeat;
+  }
+}
+
+.ant-tooltip-placement-bottom .ant-tooltip-arrow {
+  transform: rotate(180deg) translateX(50%);
+  top: 1px;
+  border: aliceblue;
+  left: 50%;
+}
+
+.ant-tooltip-placement-left .ant-tooltip-arrow {
+  transform: rotate(270deg);
+  left: auto;
+  right: -7px;
+  top: 50%;
+  transform: translateY(-50%) rotate(270deg);
+}
+
+.ant-tooltip-placement-right .ant-tooltip-arrow {
+  transform: rotate(90deg) translateY(-50%);
+  left: -11px;
+  top: 40%;
+}
+
+// DatePicker
+.ant-picker-cell-in-view.ant-picker-cell-selected .ant-picker-cell-inner {
+  background: #334e68;
+  border-radius: 50%;
+}
+
+.ant-picker-cell-in-view.ant-picker-cell-today .ant-picker-cell-inner::before {
+  border-color: #334e68;
+}
+
+.ant-picker-dropdown {
+  top: 105px;
+}
+
+// Select
+.ant-select-item-option {
+  padding: 8px;
+  font-size: 14px;
+  color: #243b53;
+
+  &:hover {
+    background-color: #f0f4f8;
+  }
+}
+
+.ant-select-item-option-selected:not(.ant-select-item-option-disabled) {
+  font-weight: 400 !important;
+  background-color: #f0f4f8;
+  border: 1px solid #0ea5e9;
+}
